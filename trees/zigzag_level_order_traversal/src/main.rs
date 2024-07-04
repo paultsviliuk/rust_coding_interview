@@ -12,7 +12,7 @@ To solve the problem of zigzag level order traversal in a binary tree, we use a 
 Here’s the step-by-step approach:
 
     Initialization:
-        Create a result vector res to store the final zigzag level order traversal.
+        Create a result vector response to store the final zigzag level order traversal.
         Create a queue (deque) dq to facilitate BFS, where each element is a tuple containing the level of the node and the node itself.
         Initialize curlevel to keep track of the current level.
 
@@ -85,8 +85,6 @@ fn zigzag_level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
     }
     response
 }
-
-
 
 fn main() {
     let mut root = TreeNode::new(3);
